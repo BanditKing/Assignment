@@ -27,13 +27,13 @@ public class Control {
                     addressBook.addContact(new BusinessContact(name2, phone2, company));
                     break;
                 case "2":
-                    System.out.print("이름을 입력하세요: ");
-                    String nameP = scanner.nextLine();
+                    System.out.print("이름을 입력하세요 : ");
+                    String name3 = scanner.nextLine();
                     System.out.print("전화번호를 입력하세요: ");
-                    String phoneP = scanner.nextLine();
-                    System.out.print("관계를 입력하세요: ");
-                    String relationship = scanner.nextLine();
-                    addressBook.addContact(new PersonalContact(nameP, phoneP, relationship));
+                    String phone3 = scanner.nextLine();
+                    System.out.print("관계를 입력하세요 : ");
+                    String relation = scanner.nextLine();
+                    addressBook.addContact(new PersonalContact(name3, phone3, relation));
                     break;
                 case "3":
                     addressBook.displayContacts();
